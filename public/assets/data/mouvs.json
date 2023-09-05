@@ -1,0 +1,122 @@
+{
+	"data": [
+		{
+			"id": "1000",
+			"code": "f230fh0g3",
+			"name": "Doctor1",
+			"description": "Product Description",
+            "responsable": "flan ",
+			"phoneDemandeur": "11112222222",
+			"price": 65,
+			"category": "Accessories",
+			"totalQuantity": 24,
+			"role": "pharmacy",
+            "date": 5,
+            "orders": [
+                {
+                    "id": "1000",
+                    "display_name": "Clofenal",
+                    "date": "2020-09-13",
+                    "amount": 65,
+                    "quantity": 1,
+                    "customer": "David James",
+                    "status": "PENDING"
+                },
+                {
+                    "id": "1001",
+                    "display_name": "paracetamol",
+                    "date": "2020-05-14",
+                    "amount": 130,
+                    "quantity": 2,
+                    "customer": "Leon Rodrigues",
+                    "status": "DELIVERED"
+                },
+                {
+                    "id": "1002",
+                    "display_name": "ecovar",
+                    "date": "2019-01-04",
+                    "amount": 65,
+                    "quantity": 1,
+                    "customer": "Juan Alejandro",
+                    "status": "RETURNED"
+                },
+                {
+                    "id": "1003",
+                    "display_name": "vogalon",
+                    "date": "2020-09-13",
+                    "amount": 195,
+                    "quantity": 3,
+                    "customer": "Claire Morrow",
+                    "status": "CANCELLED"
+                }
+            ]
+		},
+		{
+			"id": "1001",
+			"code": "nvklal433",
+			"name": "Doctor8",
+            "responsable": "flan ",
+			"description": "Product Description",
+            "phoneDemandeur": "11112222222",
+			"price": 72,
+			"category": "Accessories",
+			"totalQuantity": 61,
+			"role": "staff",
+            "date": 4,
+            "orders": [
+                {
+                    "id": "2000",
+                    "display_name": "glucoformin",
+                    "date": "2020-05-14",
+                    "amount": 72,
+                    "quantity": 1,
+                    "customer": "Maisha Jefferson",
+                    "status": "DELIVERED"
+                },
+                {
+                    "id": "2001",
+                    "display_name": "vogati",
+                    "date": "2020-02-28",
+                    "amount": 144,
+                    "quantity": 2,
+                    "customer": "Octavia Murillo",
+                    "status": "PENDING"
+                }
+            ]
+		},
+		{
+			"id": "1002",
+			"code": "zz21cz3c1",
+			"name": "Pharmacy2",
+            "responsable": "flan ",
+			"description": "Product Description",
+            "phoneDemandeur": "11112222222",
+			"price": 79,
+			"category": "Fitness",
+			"totalQuantity": 2,
+			"role": "Admin",
+            "date": 3,
+            "orders": [
+                {
+                    "id": "3000",
+                    "display_name": "rynza",
+                    "date": "2020-07-05",
+                    "amount": 79,
+                    "quantity": 1,
+                    "customer": "Stacey Leja",
+                    "status": "DELIVERED"
+                },
+                {
+                    "id": "3001",
+                    "display_name": "clofenal",
+                    "date": "2020-02-06",
+                    "amount": 79,
+                    "quantity": 1,
+                    "customer": "Ashley Wickens",
+                    "status": "DELIVERED"
+                }
+            ]
+		}
+	
+	]
+}

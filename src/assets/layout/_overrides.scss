@@ -1,0 +1,19 @@
+//Suggested location to add your overrides so that migration would be easy by just updating the SASS folder in the future
+
+.p-datatable .p-datatable-tbody >tr >td{ 
+    padding: 0.2rem 1.5rem;
+}
+
+.p-toolbar { 
+    padding: 0.2rem 0.2rem;
+}
+
+.layout-main-containerDash {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    transition: margin-left 0.2s;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
