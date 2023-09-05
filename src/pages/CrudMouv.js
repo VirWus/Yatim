@@ -565,7 +565,7 @@ const CrudMouv = () => {
           }
       },
       business: {
-          name: "Clinique Akrouf",
+          name: "Yatim Akrouf",
           address: "Bordj Bou Arreridj, Algeria",
           phone: "",
           email: "",
