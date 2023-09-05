@@ -74,7 +74,7 @@ const CrudMouv = () => {
   const dt = useRef(null)
   //console.log(auth)
   if (auth) {
-    var decoded = jwt_decode(auth['token'])
+    //var decoded = jwt_decode(auth['token'])
     //console.log(decoded);
   }
 
@@ -465,7 +465,7 @@ const CrudMouv = () => {
       } else {
         //console.log(mouv)
         _mouv.date = dateFormat(Date(), 'yyyy-MM-dd hh:mm:ss')
-        _mouv.responsable = decoded.scopes[0]
+        //_mouv.responsable = decoded.scopes[0]
         _mouv.distinataire = mouv.name
         _mouvs.push(_mouv)
         toast.current.show({

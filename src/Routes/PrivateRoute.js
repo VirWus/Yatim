@@ -15,12 +15,12 @@ const PrivateRoute = ({ component: Component, ...rest }) => {
   // Add your own authentication on the below line.
   //const isLoggedIn = AuthService.isLoggedIn()
   const auth = useRecoilValue(authAtom);
-  if (auth) {
-    var decoded = jwt_decode(auth['token'])
-     //console.log(decoded);
-   
-  }
-  //console.log(auth)
+  // if (auth) {
+  //   var decoded = jwt_decode(auth['token'])
+  //    //console.log(decoded);
+  //
+  // }
+  console.log(auth)
 
   return (
     <Route

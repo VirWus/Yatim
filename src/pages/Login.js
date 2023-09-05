@@ -44,7 +44,6 @@ const Login = props => {
       //setShowMessage(true)
 
       setLoading(true)
-     
    userActions.login(data).then(data => {
         //setShowMessage(data)
         setLoading(false)

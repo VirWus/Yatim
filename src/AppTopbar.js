@@ -13,7 +13,7 @@ export const AppTopbar = props => {
   const auth = useRecoilValue(authAtom)
   //console.log(auth)
   if (auth) {
-    var decoded = jwt_decode(auth['token'])
+    var decoded = auth//jwt_decode(auth['token'])
    // console.log(decoded["scopes"][0]);
   }
 
@@ -28,7 +28,7 @@ export const AppTopbar = props => {
       </button>
 
       <Link to="/" className="layout-topbar-logo">
-        <span>Clinique Akhrouf</span>
+        <span>كهاتين</span>
       </Link>
 
       <Clock></Clock>
@@ -54,7 +54,7 @@ export const AppTopbar = props => {
           </Link>
         </li>
        
-        {decoded["scopes"][0] === "admin-tech" ? (
+        {decoded.type === "admin-tech" ? (
           <li>
             <Link to="/setting" className="p-link layout-topbar-button">
               <i className="pi pi-cog" />

@@ -69,9 +69,9 @@ function App() {
 
   const history = useHistory()
   const auth = useRecoilValue(authAtom)
-  //console.log(auth)
+  console.log(auth)
   if (auth) {
-    var decoded = jwt_decode(auth['token'])
+    //var decoded = jwt_decode(auth['token'])
     //console.log(decoded);
   }
 
@@ -80,13 +80,15 @@ function App() {
       copyTooltipRef.current &&
       copyTooltipRef.current.updateTargetEvents()
 
-    if (auth && decoded.scopes[0] === 'admin-tech') {
+    if (auth //&&
+     //   decoded.scopes[0] === 'admin-tech'
+    ) {
       setMenu([
         {
           label: 'Home',
           items: [
             {
-              label: 'Dashboard',
+              label: 'الاساسية',
               icon: 'pi pi-fw pi-home',
               to: '/'
             }
@@ -505,13 +507,6 @@ function App() {
 
   return (
     <div className={wrapperClass} onClick={onWrapperClick}>
-      <Tooltip
-        ref={copyTooltipRef}
-        target=".block-action-copy"
-        position="bottom"
-        content="Copied to clipboard"
-        event="focus"
-      />
 
       <AppTopbar
         onToggleMenuClick={onToggleMenuClick}
@@ -521,6 +516,7 @@ function App() {
         onMobileSubTopbarMenuClick={onMobileSubTopbarMenuClick}
       />
 
+
       <div className="layout-sidebar" onClick={onSidebarClick}>
         <AppMenu
           model={menu}
@@ -528,12 +524,18 @@ function App() {
           layoutColorMode={layoutColorMode}
         />
       </div>
-
+      <Tooltip
+          ref={copyTooltipRef}
+          target=".block-action-copy"
+          position="bottom"
+          content="Copied to clipboard"
+          event="focus"
+      />
       <div className="layout-main-container">
         <div className="layout-main">
 
-       <PrivateRoute path="/setting" component={Setting} />
-         <PrivateRoute path="/user" component={Profile} />
+          <PrivateRoute path="/setting" component={Setting} />
+          <PrivateRoute path="/user" component={Profile} />
           <PrivateRoute path="/mouv" component={CrudMouv} />
           <PrivateRoute path="/staff" component={CrudStaffs} />
           <PrivateRoute path="/products" component={CrudProducts} />

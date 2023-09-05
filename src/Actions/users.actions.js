@@ -30,8 +30,9 @@ function useUserActions() {
   }
 
   function login({ username, password }) {
-    //   localStorage.setItem('user', JSON.stringify({ username, password }));
-      console.log({ username, password })
+    localStorage.setItem('user', JSON.stringify({ username, password , "type": "admin" }));
+    //console.log({ username, password })
+
     setAuth({username,password});
     const { from } = history.location.state || { from: { pathname: '/' } }
     history.push(from)

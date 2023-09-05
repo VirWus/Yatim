@@ -9,8 +9,8 @@ const Dashboard = props => {
     const auth = JSON.parse(localStorage.getItem('user'))
     //console.log(auth)
     if (auth) {
-      var decoded = jwt_decode(auth['token'])
-      setDecode(decoded)
+      //var decoded = jwt_decode(auth['token'])
+      //setDecode(auth)
       //console.log(decod)
     }
   }, [])
