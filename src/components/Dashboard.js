@@ -18,9 +18,10 @@ const Dashboard = props => {
   const menu = [
     {
       label: 'Staff',
+      title:"عمال",
       imgUrl: '',
       to: '/staff',
-      disabled: decod && decod.scopes[0] === 'admin-tech' ? false : true,
+      disabled: false,
       icon: (
         <svg
           width="866"
@@ -391,6 +392,7 @@ const Dashboard = props => {
     },
     {
       label: 'Pharmacie',
+      title:"عمال",
       imgUrl:
         'https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
       to: '/pharmacy',
@@ -1272,6 +1274,7 @@ const Dashboard = props => {
     },
     {
       label: 'Comptabilité',
+      title:"محسن",
       imgUrl:
         'https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
       to: '/Comptabilite',
@@ -1808,6 +1811,7 @@ const Dashboard = props => {
     },
     {
       label: 'Maternite',
+      title:"اذ",
       imgUrl:
         'https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
       to: '/Maternite',
@@ -2567,6 +2571,7 @@ const Dashboard = props => {
     },
     {
       label: 'Dossiers',
+      title:"عمال",
       imgUrl:
         'https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
       to: '/Dossier',
@@ -2711,6 +2716,7 @@ const Dashboard = props => {
     },
     {
       label: 'Imagerie',
+      title:"عمال",
       imgUrl: 'pi pi-fw pi-briefcase',
       to: '/Imagerie',
       disabled: true,
@@ -3650,6 +3656,7 @@ const Dashboard = props => {
     },
     {
       label: 'PMA',
+      title:"عمال",
       imgUrl: 'pi pi-fw pi-building',
       to: '/PMA',
       disabled: true,
@@ -4231,6 +4238,7 @@ const Dashboard = props => {
     },
     {
       label: 'Consultation',
+      title:"عمال",
       imgUrl: 'pi pi-fw pi-database',
       to: '/Consultation',
       disabled: true,
@@ -4823,6 +4831,7 @@ const Dashboard = props => {
     },
     {
       label: 'Stock',
+      title:"عمال",
       imgUrl: 'pi pi-fw pi-server',
       to: '/Stock',
       disabled: true,
@@ -5301,7 +5310,7 @@ const Dashboard = props => {
         <div className={'cardF ' + item.label}>
           <div className="overlay"></div>
           <div className="circle">{item.icon}</div>
-          <p>{item.label}</p>
+          <p>{item.title}</p>
         </div>
       </Link>
     </div>
