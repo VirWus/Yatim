@@ -5,7 +5,7 @@ import { Button } from 'primereact/button'
 import { Toast } from 'primereact/toast'
 import { useFormik } from 'formik'
 import { useUserActions } from '../Actions/users.actions'
-import Logo from '../assets/logo.jpg'
+import Logo from '../assets/logo11.jpg'
 import { BlockUI } from 'primereact/blockui'
 
 import { Password } from 'primereact/password'

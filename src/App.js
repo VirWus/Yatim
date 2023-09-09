@@ -85,7 +85,7 @@ function App() {
     ) {
       setMenu([
         {
-          label: 'Home',
+          label: 'الواجهة',
           items: [
             {
               label: 'الاساسية',
@@ -99,12 +99,12 @@ function App() {
           icon: 'pi pi-fw pi-search',
           items: [
             {
-              label: 'Staff',
+              label: 'عمال',
               icon: 'pi pi-fw pi-users',
               to: '/staff'
             },
             {
-              label: 'Pharmacie',
+              label: 'كفالة',
               icon: 'pi pi-fw pi-briefcase',
               to: '/pharmacy',
               items: [
@@ -117,101 +117,101 @@ function App() {
                 //   to: '/products',
                 // } ,
                 {
-                  label: 'Fournisseurs',
+                  label: 'محسنين',
                   to: '/fournisseur'
                 }
               ]
             },
+            // {
+            //   label: 'Comptabilité',
+            //   icon: 'pi pi-fw pi-book',
+            //   to: '/Comptabilité',
+            //   disabled: true
+            //   // items: [
+            //   //   {
+            //   //     label: 'All Comptabilité'
+            //   //   },
+            //   //   {
+            //   //     label: 'Add Comptabilité'
+            //   //   },
+            //
+            //   //   {
+            //   //     label: 'Edit Comptabilité'
+            //   //   }
+            //   // ]
+            // },
+            // {
+            //   label: 'Maternité',
+            //   icon: 'pi pi-fw pi-user-edit',
+            //   to: '/Maternité',
+            //   disabled: true
+            //   // items: [
+            //   //   {
+            //   //     label: 'All Maternité'
+            //   //   },
+            //   //   {
+            //   //     label: 'Add Maternité'
+            //   //   },
+            //
+            //   //   {
+            //   //     label: 'Edit Maternité'
+            //   //   }
+            //   // ]
+            // },
+            // {
+            //   label: 'Dossier Médical',
+            //   icon: 'pi pi-fw pi-book',
+            //   to: '/Dossier',
+            //   disabled: true
+            //   // items: [
+            //   //   {
+            //   //     label: 'All Dossier Médical'
+            //   //   },
+            //   //   {
+            //   //     label: 'Add Dossier Médical'
+            //   //   },
+            //
+            //   //   {
+            //   //     label: 'Edit Dossier Médical'
+            //   //   }
+            //   // ]
+            // },
+            // {
+            //   label: 'Imagerie Médical',
+            //   icon: 'pi pi-fw pi-briefcase',
+            //   to: '/Imagerie',
+            //   disabled: true
+            //   // items: [
+            //   //   {
+            //   //     label: 'All Imagerie Médical'
+            //   //   },
+            //   //   {
+            //   //     label: 'Add Imagerie Médical'
+            //   //   }
+            //   // ]
+            // },
+            // {
+            //   label: 'PMA',
+            //   icon: 'pi pi-fw pi-building',
+            //   to: '/PMA',
+            //   disabled: true
+            // },
+            // {
+            //   label: 'Consultation',
+            //   icon: 'pi pi-fw pi-database',
+            //   to: '/Consultation',
+            //   disabled: true
+            //   // items: [
+            //   //   {
+            //   //     label: 'Consultation'
+            //   //   },
+            //   //   {
+            //   //     label: 'Issued Consultation'
+            //   //   }
+            //   // ]
+            // },
             {
-              label: 'Comptabilité',
-              icon: 'pi pi-fw pi-book',
-              to: '/Comptabilité',
-              disabled: true
-              // items: [
-              //   {
-              //     label: 'All Comptabilité'
-              //   },
-              //   {
-              //     label: 'Add Comptabilité'
-              //   },
-
-              //   {
-              //     label: 'Edit Comptabilité'
-              //   }
-              // ]
-            },
-            {
-              label: 'Maternité',
-              icon: 'pi pi-fw pi-user-edit',
-              to: '/Maternité',
-              disabled: true
-              // items: [
-              //   {
-              //     label: 'All Maternité'
-              //   },
-              //   {
-              //     label: 'Add Maternité'
-              //   },
-
-              //   {
-              //     label: 'Edit Maternité'
-              //   }
-              // ]
-            },
-            {
-              label: 'Dossier Médical',
-              icon: 'pi pi-fw pi-book',
-              to: '/Dossier',
-              disabled: true
-              // items: [
-              //   {
-              //     label: 'All Dossier Médical'
-              //   },
-              //   {
-              //     label: 'Add Dossier Médical'
-              //   },
-
-              //   {
-              //     label: 'Edit Dossier Médical'
-              //   }
-              // ]
-            },
-            {
-              label: 'Imagerie Médical',
-              icon: 'pi pi-fw pi-briefcase',
-              to: '/Imagerie',
-              disabled: true
-              // items: [
-              //   {
-              //     label: 'All Imagerie Médical'
-              //   },
-              //   {
-              //     label: 'Add Imagerie Médical'
-              //   }
-              // ]
-            },
-            {
-              label: 'PMA',
-              icon: 'pi pi-fw pi-building',
-              to: '/PMA',
-              disabled: true
-            },
-            {
-              label: 'Consultation',
-              icon: 'pi pi-fw pi-database',
-              to: '/Consultation',
-              disabled: true
-              // items: [
-              //   {
-              //     label: 'Consultation'
-              //   },
-              //   {
-              //     label: 'Issued Consultation'
-              //   }
-              // ]
-            },
-            {
-              label: 'Stock',
+              label: 'صندوق المال',
               icon: 'pi pi-fw pi-server',
               to: '/stock',
               items: []
